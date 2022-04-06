@@ -9,12 +9,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-class LoseFrame extends JFrame implements ActionListener{
+public class LoseFrame extends JFrame implements ActionListener{
 	
 	//pannello che appare quando si perde
 	
 	JLabel msg, bg;				
-	MyButton exit;				
+	public MyButton exit;				
 	
 	public LoseFrame(){
 		

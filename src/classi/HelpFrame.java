@@ -8,12 +8,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-class HelpFrame extends JFrame implements ActionListener{
+public class HelpFrame extends JFrame implements ActionListener{
 	
 	//pannello per le informazioni
 	
 	JLabel info;				
-	MyButton exit;				
+	public MyButton exit;				
 
 	
 	public HelpFrame(){

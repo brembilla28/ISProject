@@ -11,13 +11,13 @@ import java.util.Scanner;
 
 import javax.swing.JPanel;
 
-class GamePanel extends JPanel implements KeyListener{
+public class GamePanel extends JPanel implements KeyListener{
 	
 	//pannello di gioco
 	
 	Brick[] bricks;					
 	Paddle paddle;					
-	Ball ball;						
+	public Ball ball;						
 
 	
 	boolean[] keys;					
@@ -76,7 +76,7 @@ class GamePanel extends JPanel implements KeyListener{
         return temp;																
 	}
 	
-	private void checkContact(){
+	public void checkContact(){
 		
 			
         //controllo bordi destro e sinistro

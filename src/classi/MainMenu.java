@@ -6,7 +6,9 @@ import javax.swing.*;
 public class MainMenu extends JFrame implements ActionListener{
 	
 
-	MyButton start, help, exit;		//pulsanti per interagire con utente
+	public MyButton start;		//pulsanti per interagire con utente
+	public MyButton help;
+	public MyButton exit;
 	MyButton[] buttons;				//Array di tutti i pulsanti
 	
 	JLabel bg;						//Background image					
