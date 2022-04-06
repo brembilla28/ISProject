@@ -284,4 +284,4 @@ class GamePanel extends JPanel implements KeyListener{
     public int getScore(){
     	
     	return score;
-    }
+    }}
