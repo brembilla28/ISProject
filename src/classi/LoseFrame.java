@@ -33,6 +33,7 @@ class LoseFrame extends JFrame implements ActionListener{
         msg.setSize(600,100);
         msg.setLocation(250,200);
         add(msg);
+        exit = new MyButton("exit");
 		exit.setSize(200,65);
 		exit.setLocation(300, 450);
 		exit.addActionListener(this);								
