@@ -6,7 +6,6 @@ public class Paddle{
 	
 	
 	private int x, y, width; 		
-	private String pUp;				
 
 	
 	public Paddle(int x, int y){
@@ -15,7 +14,6 @@ public class Paddle{
 		this.x = x;
 		this.y = y;
 		width = 60;
-		pUp = "";
 	}
 	
 	public void move(boolean[] keys){
@@ -34,43 +32,7 @@ public class Paddle{
 
 	}
 	
-	public void powerUse(int lives, Ball b){
-		
-		
-		if (pUp.equals("expand")){	
-			if (width < 150) {
-        	width += 10;
-			}
-        }
-        
-        else if (pUp.equals("shrink")){			
-        	if (width > 60) {
-            	width -= 20;
-    			}
-        	else width = 40;
-        } 
-        	
-        else if(pUp.equals("life")){			
-        	lives += 1;
-        } 
-        
-        else if(pUp.equals("fast")){			
-        	
-        	b.setDY(b.getDY() * 1.5 );
-        	b.setDX(b.getDX() * 1.5 );
-        }
-        
-        else if (pUp.equals("slow")){			
-        	
-        	b.setDY(b.getDY() * 0.5 );
-        	b.setDX(b.getDX() * 0.5 );
-        }
-    
-        
-        else{									
-        	width = 60;
-        }
-	}
+	
 	
 	
 	public int getWidth(){
@@ -101,8 +63,6 @@ public class Paddle{
 		y = i;
 	}
 	
-	public void setpUp(String s){
-		pUp = s;
-	}
+
 	
 }
