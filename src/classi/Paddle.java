@@ -1,5 +1,8 @@
 package classi;
-import java.awt.event.KeyEvent;
+
+import java.awt.event.*;
+
+
 
 
 public class Paddle{
@@ -30,10 +33,8 @@ public class Paddle{
             }
         }
 
-	}
-	
-	
-	
+	}	
+
 	
 	public int getWidth(){
 		return width;
@@ -63,6 +64,5 @@ public class Paddle{
 		y = i;
 	}
 	
-
 	
 }

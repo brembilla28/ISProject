@@ -7,6 +7,11 @@ class MyButton extends JButton{
 	
 	//Custom JButton class
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public MyButton(String f){
 		
 		ImageIcon p = new ImageIcon(f+"P.png");			

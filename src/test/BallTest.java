@@ -2,7 +2,6 @@ package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import javax.swing.ImageIcon;
 
 import org.junit.jupiter.api.*;
 
@@ -30,12 +29,6 @@ class BallTest {
 		ball.move();
 		assertEquals(ball.getDX(), dx, "Velocità x errata");
 		assertEquals(ball.getDY(), dy, "Velocità y errata");
-	}
-	
-	@Test
-	@DisplayName("Test for loading the image")
-	void getImage() {
-		assertEquals(ball.getImage(), new ImageIcon("ball.png").getImage());
 	}
 	
 }

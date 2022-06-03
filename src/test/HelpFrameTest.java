@@ -28,6 +28,6 @@ class HelpFrameTest {
 	void pressExit() {
 		ActionEvent e = new ActionEvent(exit, 0, "");
 		hf.actionPerformed(e);
-		assertTrue(!hf.isVisible(), "Errore: hf ancora visibile");
+		assertTrue(!hf.isVisible(), "Errore: helpframe ancora visibile");
 	}
 }
