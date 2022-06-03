@@ -26,11 +26,7 @@ public class Ball{
         this.setY(this.getY() + this.getDY());
 	}
 	
-	//ottenimento immagine pallina
-	public Image getImage(){
-		
-		return new ImageIcon("ball.png").getImage();
-	}
+
     //ottenere velocità x
     public double getDX() {
         return dx;
