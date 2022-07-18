@@ -51,10 +51,6 @@ public class Paddle{
 	}
 	
 	
-	public void setWidth(int i){
-		width = i;
-	}
-	
 	
 	public void setX(int i){
 		x = i;

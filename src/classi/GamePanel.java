@@ -2,10 +2,11 @@ package classi;
 
 import javax.swing.JPanel;
 
-
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 public class gamepanel extends JPanel implements ActionListener {
@@ -32,24 +33,27 @@ public class gamepanel extends JPanel implements ActionListener {
 		add(game);
 		
 		level = new JLabel("Livello");
+		level.setForeground(Color.BLACK);
 		level.setBounds(565, 81, 212, 48);
 		add(level);
 		
 		score = new JLabel("Punteggio");
+		score.setForeground(Color.BLACK);
 		score.setBounds(565, 181, 212, 48);
 		add(score);
 		
 		lives = new JLabel("Vite");
+		lives.setForeground(Color.BLACK);
 		lives.setBounds(565, 280, 212, 48);
 		add(lives);
 		
-		/*bg = new JLabel(new ImageIcon("bbg.png"));				//Setup backgroud
-		bg.setSize(800,600);
-		add(bg);*/
 		
 		myTimer = new javax.swing.Timer(10,this);				
 		myTimer.start();
 		
+		bg = new JLabel(new ImageIcon("bbg.png"));
+		bg.setSize(800,600);
+		add(bg);
 	}
 	
 	public void resetgamepanel(gamecore gc) { //sistemare

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
@@ -18,6 +19,7 @@ import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class loseframe extends JPanel {
@@ -25,6 +27,7 @@ public class loseframe extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	JLabel bg;
 	MyButton exit;
 	mainmenu main;
 	List<classifica> cl;
@@ -42,12 +45,14 @@ public class loseframe extends JPanel {
 		cl = new ArrayList<classifica>();
 		readfile();
 		
+		
 		exit = new MyButton("exit");
 		exit.setBounds(325, 465, 150, 65);
 		setLayout(null);
 		add(exit);
 		
 		JLabel gameover = new JLabel("Game Over");
+		gameover.setForeground(Color.BLACK);
 		gameover.setBounds(200, 10, 400, 165);
 		gameover.setFont(new Font("Times New Roman", Font.BOLD, 80));
 		add(gameover);
@@ -72,9 +77,11 @@ public class loseframe extends JPanel {
 				if(!textField.getText().isEmpty() && c.getscore() > 0 && !scrittura) {
 				writefile(c.getscore(), textField.getText());
 				scrittura = true;
+				//refreshlist();
+				//jcp.revalidate();
+				//jcp.repaint();
 				refreshlist();
-				jcp.revalidate();
-				jcp.repaint();
+
 				}
 			}
 		});
@@ -82,6 +89,7 @@ public class loseframe extends JPanel {
 		add(ok);
 		
 		JLabel classifica = new JLabel("Classifica", SwingConstants.CENTER);
+		classifica.setForeground(Color.BLACK);
 		classifica.setBounds(312, 175, 176, 20);
 		classifica.setFont(new Font("Times New Roman", Font.ITALIC, 20));
 		add(classifica);
@@ -95,6 +103,9 @@ public class loseframe extends JPanel {
 				textField.setText(null);
 			}
 		});
+		bg = new JLabel(new ImageIcon("bbg.png"));
+		bg.setSize(800,600);
+		add(bg);
 	}
 	
 	public void refreshlist() {
