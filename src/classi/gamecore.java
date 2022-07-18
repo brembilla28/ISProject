@@ -44,9 +44,7 @@ public gamecore() {
 public void modlives(int i) {
 	lives = i;
 }
-public void modpaddle(int x) {
-	paddle.setWidth(x);
-}
+
 
 //caricamento dati livello
 public void load(int lvl){	

@@ -48,7 +48,6 @@ public class Container extends JFrame{
 		primoframe.setgame(terzoframe);
 		secondoframe.setmain(primoframe);
 		terzoframe.setmain(primoframe);
-		terzoframe.sethelp(secondoframe);
 		terzoframe.setlose(quartoframe);
 	}
 		
@@ -67,9 +66,7 @@ public class Container extends JFrame{
 	public void setlives(int i) {
 		gc.modlives(i);
 	}
-	public void setwidth(int x) {
-		gc.modpaddle(x);
-	}
+
 	
 public static void main(String[] args) {
 

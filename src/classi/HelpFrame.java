@@ -15,7 +15,7 @@ public class helpframe extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	MyButton start,help,exit;
+	MyButton exit;
 	JLabel bg;
 	mainmenu main;
 	private JLabel lives;

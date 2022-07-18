@@ -18,7 +18,6 @@ public class gamepanel extends JPanel implements ActionListener {
 	gamecore game;
 	private static javax.swing.Timer myTimer;
 	JLabel level,score,lives, bg;
-	helpframe helping;
 	mainmenu main;
 	loseframe lose;
 	/**
@@ -87,8 +86,6 @@ public void actionPerformed(ActionEvent e){
 //set mainmenu
 public void setmain(mainmenu m) {main = m;}
 
-//set helpframe
-public void sethelp(helpframe h) {helping = h;}
 
 //set loseframe
 public void setlose(loseframe l) {lose = l;}

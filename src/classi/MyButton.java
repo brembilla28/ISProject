@@ -4,7 +4,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 class MyButton extends JButton{
-	
+	ImageIcon p;
+	ImageIcon d;
 	//Custom JButton class
 
 	/**
@@ -14,8 +15,8 @@ class MyButton extends JButton{
 
 	public MyButton(String f){
 		
-		ImageIcon p = new ImageIcon(f+"P.png");			
-		ImageIcon d = new ImageIcon(f+"D.png");			
+		p = new ImageIcon(f+"P.png");			
+		d = new ImageIcon(f+"D.png");			
 		
 		this.setIcon(d);								
 		this.setRolloverIcon(p);
